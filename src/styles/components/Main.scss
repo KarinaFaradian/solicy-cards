@@ -1,7 +1,51 @@
-.main {
-    width: 75%;
-    min-height: 500px;
-    float: left;
+@import '../variables.scss';
+
+.header {
+  width: 75%;
+  min-height: 60px;
+  background-color: $white;
+  border-bottom: 2px solid $black;
+  position: fixed;
+
+  &_button {
+    margin-right: auto;
+  }
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  background-color: $white;
+  text-align: center;
+}
+.wrapper {
+  width: 75%;
+  min-height: 600px;
+  max-height: 650px;
+  float: left;
+  overflow: scroll;
+}
+
+.card {
+  &_list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px;
+    justify-content: center;
   }
 
-  
+  &_item {
+    border: 2px solid $black;
+    width: 200px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+}
