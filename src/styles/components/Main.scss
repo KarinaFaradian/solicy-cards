@@ -8,20 +8,18 @@
   position: fixed;
 
   &_button {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid $blue;
+    border-radius: 5px;
+    background-color: $white;
+    text-align: center;
     margin-right: auto;
   }
 }
 
-button {
-  width: 100px;
-  height: 40px;
-  margin: 10px;
-  cursor: pointer;
-  border: 1px solid $blue;
-  border-radius: 5px;
-  background-color: $white;
-  text-align: center;
-}
 .wrapper {
   width: 75%;
   min-height: 600px;
@@ -47,5 +45,15 @@ button {
     justify-content: center;
     align-items: center;
     margin: 20px;
+    position: relative;
+  }
+
+  &_delete {
+    position: absolute;
+    left: 175px;
+    top: 5px;
+    background-color: rgba(28,28,28,0);
+    border: none;
+    cursor: pointer;
   }
 }

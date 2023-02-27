@@ -1,28 +1,33 @@
 import React, { useState } from 'react';
+import Cross from '../../../assets/img/cross.svg';
 
 import '../../../styles/components/Main.scss';
 
 type Card = {
-  id: string,
-  count: number
-}
+  id: number;
+  count: number;
+};
 
 export const Main = () => {
   const [cards, setCards] = useState<Card[]>([]);
 
   let count = Math.floor(Math.random() * 300);
 
+  const deleteCard = (cardId: number) => {
+setCards(cards.filter(card => card.id !== cardId))
+  }
+
   const addCard = () => {
-    setCards([...cards, { id: new Date().toString(), count }]);
+    setCards([...cards, { id: Date.now(), count }]);
   };
 
   return (
     <div className="wrapper">
       <header className="header">
-        <button onClick={addCard} className="header_button-add">
+        <button onClick={addCard} className="header_button header_button-add">
           Add card
         </button>
-        <button className="header_button-sort">Sort cards</button>
+        <button className="header_button header_button-sort">Sort cards</button>
       </header>
 
       <main>
@@ -30,6 +35,7 @@ export const Main = () => {
           {cards.map((card) => (
             <li className="card_item" key={card.id}>
               {card.count}
+              <button className="card_delete" onClick={() => deleteCard(card.id)}>&times;</button>
             </li>
           ))}
         </ul>
