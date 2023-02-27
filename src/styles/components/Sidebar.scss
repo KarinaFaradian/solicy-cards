@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+.sidebar {
+  width: 24%;
+  background-color: $white;
+  float: right;
+  min-height: 700px;
+  border-left: 2px solid $black;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
