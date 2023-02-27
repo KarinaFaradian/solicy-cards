@@ -1,0 +1,14 @@
+@import '../variables.scss';
+
+.header {
+  width: 75%;
+  height: 60px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid $black;
+
+  &_button {
+    margin-right: auto;
+  }
+}
