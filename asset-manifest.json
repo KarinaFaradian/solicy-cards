@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/solicy-cards/static/css/main.8c9eb2b0.css",
+    "main.js": "/solicy-cards/static/js/main.27e33873.js",
+    "index.html": "/solicy-cards/index.html",
+    "main.8c9eb2b0.css.map": "/solicy-cards/static/css/main.8c9eb2b0.css.map",
+    "main.27e33873.js.map": "/solicy-cards/static/js/main.27e33873.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c9eb2b0.css",
+    "static/js/main.27e33873.js"
+  ]
+}
