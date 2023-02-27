@@ -1,45 +1,24 @@
 @import '../variables.scss';
 
-.header {
-  width: 75%;
-  min-height: 60px;
-  background-color: $white;
-  border-bottom: 2px solid $black;
-  position: fixed;
-
-  &_button {
-    width: 100px;
-    height: 40px;
-    margin: 10px;
-    cursor: pointer;
-    border: 1px solid $blue;
-    border-radius: 5px;
-    background-color: $white;
-    text-align: center;
-    margin-right: auto;
-  }
-}
-
 .wrapper {
   width: 75%;
   min-height: 600px;
-  max-height: 650px;
+  max-height: 600px;
   float: left;
   overflow: scroll;
 }
 
 .card {
   &_list {
-    margin-top: 60px;
     display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 250px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 220px;
     justify-content: center;
   }
 
   &_item {
     border: 2px solid $black;
-    width: 200px;
+    width: 250px;
     height: 180px;
     display: flex;
     justify-content: center;
@@ -50,9 +29,9 @@
 
   &_delete {
     position: absolute;
-    left: 175px;
+    left: 225px;
     top: 5px;
-    background-color: rgba(28,28,28,0);
+    background-color: rgba(28, 28, 28, 0);
     border: none;
     cursor: pointer;
   }

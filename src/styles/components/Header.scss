@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+.header {
+  width: 75%;
+  min-height: 60px;
+  background-color: $white;
+  border-bottom: 2px solid $black;
+  float: left;
+
+  &_button {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid $blue;
+    border-radius: 5px;
+    background-color: $white;
+    text-align: center;
+    margin-right: auto;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
