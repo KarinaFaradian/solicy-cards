@@ -1,10 +1,13 @@
+import { CardState } from './types';
 import { createSlice } from '@reduxjs/toolkit';
+
+const initialState: CardState = {
+  cards: [],
+};
 
 const CardSlice = createSlice({
   name: 'card',
-  initialState: {
-    cards: [],
-  },
+  initialState,
   reducers: {
     addCard(state, action) {
       state.cards.push({ id: Date.now(), count: action.payload });
